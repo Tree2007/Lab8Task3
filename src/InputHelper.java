@@ -58,11 +58,13 @@ public class InputHelper {
                 num = scan.nextInt();
                 if (num >= minimum && num <= maximum) {
                     done = true;
+                }else {
+                    System.out.println("Invalid input. Please try again");
                 }
-            } else {
-                System.out.println("Invalid input. Please try again");
-            }
-            scan.nextLine();
+                } else {
+                    System.out.println("Invalid input. Please try again");
+                }
+                scan.nextLine();
         } while (!done);
         return num;
         /*
